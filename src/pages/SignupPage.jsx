@@ -67,7 +67,7 @@ export default function SignupPage() {
 
       localStorage.setItem('token', res.data.token);
       localStorage.setItem('user', JSON.stringify(res.data.user));
-      navigate('/');
+      navigate('/dashboard');
     } catch (err) {
       setErrorMessage(err.response?.data?.message || 'Google sign-up failed.');
     } finally {

@@ -42,7 +42,7 @@ export default function LoginPage() {
 
       localStorage.setItem('token', res.data.token);
       localStorage.setItem('user', JSON.stringify(res.data.user));
-      navigate(isAdmin ? '/dashboard' : '/');
+      navigate('/dashboard');
     } catch (err) {
       setErrorMessage(err.response?.data?.message || 'Login failed. Please try again.');
     } finally {
@@ -60,7 +60,7 @@ export default function LoginPage() {
 
       localStorage.setItem('token', res.data.token);
       localStorage.setItem('user', JSON.stringify(res.data.user));
-      navigate('/');
+      navigate('/dashboard');
     } catch (err) {
       setErrorMessage(err.response?.data?.message || 'Google authentication failed.');
     } finally {

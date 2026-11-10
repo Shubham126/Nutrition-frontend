@@ -10,39 +10,57 @@ export default function LandingPage() {
   const showcaseDrinks = [
     {
       id: 'water',
-      name: 'Water',
+      name: 'Pure Spring Water',
       status: 'Safe',
-      imageUrl: '', // Insert image path here later
+      imageUrl: 'https://images.unsplash.com/photo-1548839140-29a749e1bc4e?q=80&w=800&auto=format&fit=crop',
     },
     {
       id: 'milk',
-      name: 'Milk',
+      name: 'Organic Whole Milk',
       status: 'Safe',
-      imageUrl: '',
+      imageUrl: 'https://images.unsplash.com/photo-1550583724-b2692b85b150?q=80&w=800&auto=format&fit=crop',
     },
     {
       id: 'banana-shake',
-      name: 'Banana Shake',
+      name: 'Banana Protein Shake',
       status: 'Moderate',
-      imageUrl: '',
+      imageUrl: 'https://images.unsplash.com/photo-1553530666-ba11a7da3888?q=80&w=800&auto=format&fit=crop',
     },
     {
       id: 'coke',
-      name: 'Coke',
+      name: 'Classic Dark Cola',
       status: 'Not Safe',
-      imageUrl: '',
+      imageUrl: 'https://images.unsplash.com/photo-1622483767028-3f66f32aef97?q=80&w=800&auto=format&fit=crop',
     },
     {
       id: 'orange-juice',
-      name: 'Orange Juice',
+      name: 'Fresh Orange Juice',
       status: 'Moderate',
-      imageUrl: '',
+      imageUrl: 'https://images.unsplash.com/photo-1613478223719-2ab802602423?q=80&w=800&auto=format&fit=crop',
     },
     {
       id: 'chicken-soup',
-      name: 'Chicken Soup',
+      name: 'Chicken Bone Broth',
       status: 'Safe',
-      imageUrl: '',
+      imageUrl: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=800&auto=format&fit=crop',
+    },
+    {
+      id: 'coffee',
+      name: 'Cold Brew Coffee',
+      status: 'Moderate',
+      imageUrl: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=800&auto=format&fit=crop',
+    },
+    {
+      id: 'green-tea',
+      name: 'Sencha Green Tea',
+      status: 'Safe',
+      imageUrl: 'https://images.unsplash.com/photo-1627435601361-ec25f5b1d0e5?q=80&w=800&auto=format&fit=crop',
+    },
+    {
+      id: 'mojito',
+      name: 'Mint Lime Mocktail',
+      status: 'Safe',
+      imageUrl: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=800&auto=format&fit=crop',
     },
   ];
 
@@ -80,18 +98,12 @@ export default function LandingPage() {
               <span>Get Started Free</span>
               <ArrowRight className="w-5 h-5" />
             </Link>
-            <a
-              href="#drinks-showcase"
-              className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-carbon border border-olive text-lime font-semibold text-base hover:border-gold transition-all flex items-center justify-center"
-            >
-              Browse Catalog
-            </a>
           </div>
         </div>
       </section>
 
       {/* Drinks Showcase Section */}
-      <section id="drinks-showcase" className="py-20 px-6 bg-forest border-t border-[#C5A059]/20">
+      <section id="beverages" className="py-20 px-6 bg-forest border-t border-[#C5A059]/20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center space-y-3 mb-16">
             <h2 className="text-3xl font-bold text-white">Popular Beverages & Broths</h2>
